@@ -6,11 +6,13 @@ const Navbar = () => {
   const [visible, setVisible] = useState(false);
   return (
     <div className="flex items-center justify-between py-5 font-medium">
-      <img
-        src={phassets.logo1}
-        className="w-36 rounded-lg border border-gray-800"
-        alt=""
-      />
+      <Link to="/">
+        <img
+          src={phassets.logo1}
+          className="w-25 sm:w-36 rounded-lg border border-gray-800"
+          alt=""
+        />
+      </Link>
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
         <NavLink to="/" className="flex flex-col items-center gap-1">
           <p>HOME</p>
