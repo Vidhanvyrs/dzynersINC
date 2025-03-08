@@ -2,8 +2,11 @@ import { phassets } from "../assets/phoneassets/phoneassets";
 import { Link, NavLink } from "react-router-dom";
 import { assets } from "../assets/assets/frontend_assets/assets";
 import { useState } from "react";
+
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   return (
     <div className="flex items-center justify-between py-5 font-medium">
       <Link to="/">
@@ -18,23 +21,73 @@ const Navbar = () => {
           <p>HOME</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
-        <NavLink to="/collection" className="flex flex-col items-center gap-1">
-          <p>COLLECTION</p>
+
+        {/* COLLECTIONS DROPDOWN*/}
+        <div className="relative">
+          <div
+            className="flex items-center gap-3 cursor-pointer"
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+          >
+            <p>COLLECTIONS</p>
+            <img
+              src={assets.dropdown_icon}
+              className={`w-2 transition-transform ${
+                dropdownOpen ? "rotate-90" : "rotate-0"
+              }`}
+              alt="dropdown"
+            />
+          </div>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
-        </NavLink>
+          {/* DROPDOWN MENU */}
+          {dropdownOpen && (
+            <div className="absolute left-0 top-full w-40 bg-white shadow-md border rounded-md py-2 z-10">
+              <Link
+                to="/collection"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                onClick={() => setDropdownOpen(false)}
+              >
+                ALL
+              </Link>
+              <Link
+                to="/collection"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                onClick={() => setDropdownOpen(false)}
+              >
+                Mobiles
+              </Link>
+              <Link
+                to="/collection"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                onClick={() => setDropdownOpen(false)}
+              >
+                Laptops
+              </Link>
+              <Link
+                to="/collection"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                onClick={() => setDropdownOpen(false)}
+              >
+                Stickers
+              </Link>
+            </div>
+          )}
+        </div>
+
         <NavLink to="/about" className="flex flex-col items-center gap-1">
           <p>ABOUT</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
-        <NavLink to="contact" className="flex flex-col items-center gap-1">
+        <NavLink to="/contact" className="flex flex-col items-center gap-1">
           <p>CONTACT</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
       </ul>
+
+      {/* Other Icons */}
       <div className="flex items-center gap-6">
         <img
           src={assets.search_icon}
-          className="w-5 cursor-pointers"
+          className="w-5 cursor-pointer"
           alt="search"
         />
         <div className="group relative">
@@ -65,7 +118,7 @@ const Navbar = () => {
         />
       </div>
 
-      {/* sidebar menu for small screen */}
+      {/* Sidebar for small screens */}
       <div
         className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${
           visible ? "w-full" : "w-0"
@@ -86,15 +139,77 @@ const Navbar = () => {
           >
             HOME
           </NavLink>
-          <NavLink
+          {/* <NavLink
             onClick={() => setVisible(false)}
             className="py-2 pl-6 border"
             to="/collection"
           >
             COLLECTION
-          </NavLink>
+          </NavLink> */}
+          <div className="relative">
+            <div
+              className="py-2 pl-6 border flex items-center gap-3 cursor-pointer"
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+            >
+              <p>COLLECTION</p>
+              <img
+                src={assets.dropdown_icon}
+                className={`w-2 transition-transform ${
+                  dropdownOpen ? "rotate-90" : "rotate-0"
+                }`}
+                alt="dropdown"
+              />
+            </div>
+            {dropdownOpen && (
+              <div className="absolute left-0 top-full w-full bg-white shadow-md border py-2 z-10">
+                <Link
+                  to="/collection"
+                  className="block px-4 py-2 pl-6 text-gray-700 hover:bg-gray-200"
+                  onClick={() => {
+                    setDropdownOpen(false);
+                    setVisible(false);
+                  }}
+                >
+                  ALL
+                </Link>
+                <Link
+                  to="/collection"
+                  className="block px-4 py-2 pl-6 text-gray-700 hover:bg-gray-200"
+                  onClick={() => {
+                    setDropdownOpen(false);
+                    setVisible(false);
+                  }}
+                >
+                  Mobiles
+                </Link>
+                <Link
+                  to="/collection"
+                  className="block px-4 py-2 pl-6 text-gray-700 hover:bg-gray-200"
+                  onClick={() => {
+                    setDropdownOpen(false);
+                    setVisible(false);
+                  }}
+                >
+                  Laptops
+                </Link>
+                <Link
+                  to="/collection"
+                  className="block px-4 py-2 pl-6 text-gray-700 hover:bg-gray-200"
+                  onClick={() => {
+                    setDropdownOpen(false);
+                    setVisible(false);
+                  }}
+                >
+                  Stickers
+                </Link>
+              </div>
+            )}
+          </div>
           <NavLink
-            onClick={() => setVisible(false)}
+            onClick={() => {
+              setDropdownOpen(false);
+              setVisible(false);
+            }}
             className="py-2 pl-6 border"
             to="/about"
           >
