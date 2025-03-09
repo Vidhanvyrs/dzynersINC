@@ -10,7 +10,7 @@ import ph10 from "./ph10.jpg";
 import ph11 from "./ph11.jpg";
 import ph12 from "./ph11.jpg";
 import phone10 from "./phone10.jpg";
-import phone11 from "./phone11.jpg";
+// import phone11 from "./phone11.jpg";
 import phone12 from "./phone12.jpg";
 import phone13 from "./phone13.jpg";
 import phone14 from "./phone14.jpg";
@@ -282,7 +282,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 150,
-    image: [phone11],
+    image: [ph1],
     category: "Men",
     subCategory: "Topwear",
     sizes: ["S", "M", "L", "XL"],
@@ -295,7 +295,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 130,
-    image: [phone12],
+    image: [ph4],
     category: "Women",
     subCategory: "Topwear",
     sizes: ["S", "M", "L", "XL"],
