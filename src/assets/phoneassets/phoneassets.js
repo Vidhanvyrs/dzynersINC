@@ -11,7 +11,7 @@ import ph11 from "./ph11.jpg";
 import ph12 from "./ph11.jpg";
 import phone10 from "./phone10.jpg";
 // import phone11 from "./phone11.jpg";
-import phone12 from "./phone12.jpg";
+// import phone12 from "./phone12.jpg";
 import phone13 from "./phone13.jpg";
 import phone14 from "./phone14.jpg";
 import phone15 from "./phone15.jpg";
@@ -20,13 +20,33 @@ import phone17 from "./phone17.jpg";
 import phone18 from "./phone18.jpg";
 import phone19 from "./phone19.jpg";
 import phone20 from "./phone20.jpg";
-import phone21 from "./phone21.jpg";
+// import phone21 from "./phone21.jpg";
 import banner from "./banner.png";
 import laptop1 from "./laptop1.jpg";
 import sticker3 from "./sticker3.jpg";
+import sticker101 from "./sticker101.jpg";
+import sticker102 from "./sticker102.jpg";
+import sticker103 from "./sticker103.jpg";
+import sticker104 from "./sticker104.jpg";
+import sticker105 from "./sticker105.jpg";
+import sticker106 from "./sticker106.jpg";
+import sticker107 from "./sticker107.jpg";
+import sticker108 from "./sticker108.jpg";
+import sticker109 from "./sticker109.jpg";
+import sticker110 from "./sticker110.jpg";
+import sticker111 from "./sticker111.jpg";
+// import sticker111 from "./sticker111.jpg";
+import sticker112 from "./sticker112.jpg";
+// import sticker113 from "./sticker113.jpg";
+// import sticker114 from "./sticker114.jpg";
+import sticker115 from "./sticker115.jpg";
+import sticker116 from "./sticker116.jpg";
+import sticker117 from "./sticker117.jpg";
+// import sticker118 from "./sticker118.jpg";
+import sticker119 from "./sticker119.jpg";
+import sticker120 from "./sticker120.jpg";
 import card3 from "./card3.jpg";
 import logo1 from "./logoedited.png";
-// import logo2 from "./logo2.png";
 
 // import cart_icon from "./cart_icon.png";
 // import bin_icon from "./bin_icon.png";
@@ -72,7 +92,7 @@ export const explore_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 160,
-    image: [phone12],
+    image: [sticker101],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
@@ -99,7 +119,7 @@ export const explore_products = [
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 170,
     image: [sticker3],
-    category: "Laptops",
+    category: "Stickers",
     subCategory: "Popular",
     sizes: ["S", "M", "L", "XL"],
     date: 1716634345448,
@@ -132,6 +152,7 @@ export const explore_products = [
     bestseller: false,
   },
 ];
+// --------------------------------------------------------
 export const phone_products = [
   {
     _id: "aaaaa",
@@ -204,7 +225,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 140,
-    image: [phone18],
+    image: [sticker101],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["S", "L", "XL"],
@@ -243,7 +264,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 100,
-    image: [phone20],
+    image: [sticker102],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["M", "L", "XL"],
@@ -282,7 +303,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 150,
-    image: [ph1],
+    image: [phone18],
     category: "Mobiles",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
@@ -308,7 +329,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 160,
-    image: [phone13],
+    image: [sticker103],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
@@ -334,7 +355,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 170,
-    image: [phone15],
+    image: [sticker104],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
@@ -360,7 +381,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 180,
-    image: [phone17],
+    image: [sticker105],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
@@ -373,7 +394,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 160,
-    image: [phone18],
+    image: [sticker106],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
@@ -412,7 +433,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 200,
-    image: [phone21],
+    image: [ph7],
     category: "Laptops",
     subCategory: "Dazzling",
     sizes: ["S", "M", "L", "XL"],
@@ -425,7 +446,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 180,
-    image: [ph1],
+    image: [sticker107],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
@@ -438,7 +459,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 210,
-    image: [ph3],
+    image: [sticker108],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
@@ -451,7 +472,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 190,
-    image: [ph4],
+    image: [sticker109],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
@@ -477,7 +498,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 200,
-    image: [ph6],
+    image: [sticker110],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
@@ -516,7 +537,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 240,
-    image: [ph9],
+    image: [sticker111],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
@@ -555,7 +576,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 230,
-    image: [ph12],
+    image: [sticker112],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
@@ -672,7 +693,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 300,
-    image: [ph10],
+    image: [sticker119],
     category: "Stickers",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
@@ -685,7 +706,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 280,
-    image: [ph11],
+    image: [sticker120],
     category: "Stickers",
     subCategory: "Dazzling",
     sizes: ["S", "M", "L", "XL"],
@@ -737,7 +758,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 300,
-    image: [ph8],
+    image: [sticker115],
     category: "Stickers",
     subCategory: "Dazzling",
     sizes: ["S", "M", "L", "XL"],
@@ -763,7 +784,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 310,
-    image: [ph10],
+    image: [sticker117],
     category: "Stickers",
     subCategory: "Dazzling",
     sizes: ["S", "M", "L", "XL"],
@@ -776,7 +797,7 @@ export const phone_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 340,
-    image: [ph3],
+    image: [sticker116],
     category: "Stickers",
     subCategory: "Dazzling",
     sizes: ["S", "M", "L", "XL"],

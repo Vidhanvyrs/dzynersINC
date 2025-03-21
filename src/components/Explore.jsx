@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Explore = ({ id, image, name }) => {
   return (
-    <Link className="text-gray-700 cursor-pointer" to={`/product/${id}`}>
+    <Link className="text-gray-700 cursor-pointer" to={`/explore/${id}`}>
       <div className="mt-3 rounded-full w-20 sm:w-30 border border-gray-600">
         <img
           className="w-full h-20 sm:h-30 transition ease-in-out rounded-full"

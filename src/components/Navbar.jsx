@@ -1,11 +1,23 @@
 import { phassets } from "../assets/phoneassets/phoneassets";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { assets } from "../assets/assets/frontend_assets/assets";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const { setShowSearch } = useContext(ShopContext);
+  const [navsearch, showNavSearch] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname.includes("collection")) {
+      showNavSearch(true);
+    } else {
+      showNavSearch(false);
+    }
+  });
 
   return (
     <div className="flex items-center justify-between py-5 font-medium">
@@ -85,11 +97,14 @@ const Navbar = () => {
 
       {/* Other Icons */}
       <div className="flex items-center gap-6">
-        <img
-          src={assets.search_icon}
-          className="w-5 cursor-pointer"
-          alt="search"
-        />
+        {navsearch && (
+          <img
+            onClick={() => setShowSearch(true)}
+            src={assets.search_icon}
+            className="w-5 cursor-pointer"
+            alt="search"
+          />
+        )}
         <div className="group relative">
           <img
             className="w-5 cursor-pointer"

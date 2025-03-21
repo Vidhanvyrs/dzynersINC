@@ -197,6 +197,27 @@ const Collection = () => {
             </motion.div>
           ))}
         </div>
+        {/* Masonary Layout */}
+        {/* <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+          {filterProducts.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="break-inside-avoid p-1"
+            >
+              <ProductItem
+                key={index}
+                name={item.name}
+                id={item._id}
+                price={item.price}
+                image={item.image}
+              />
+            </motion.div>
+          ))} 
+        </div>*/}
       </div>
     </div>
   );
