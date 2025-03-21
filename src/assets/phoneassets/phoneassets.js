@@ -11,7 +11,7 @@ import ph11 from "./ph11.jpg";
 import ph12 from "./ph11.jpg";
 import phone10 from "./phone10.jpg";
 // import phone11 from "./phone11.jpg";
-// import phone12 from "./phone12.jpg";
+import phone12 from "./phone12.jpg";
 import phone13 from "./phone13.jpg";
 import phone14 from "./phone14.jpg";
 import phone15 from "./phone15.jpg";
@@ -92,8 +92,8 @@ export const explore_products = [
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 160,
-    image: [sticker101],
-    category: "Stickers",
+    image: [phone12],
+    category: "Mobile",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
     date: 1716632145448,
@@ -126,13 +126,13 @@ export const explore_products = [
     bestseller: false,
   },
   {
-    _id: "all_visiting_cards",
-    name: "Visiting Cards",
+    _id: "all_business_cards",
+    name: "Business Cards",
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 200,
     image: [card3],
-    category: "Laptops",
+    category: "Business Cards",
     subCategory: "Dazzling",
     sizes: ["S", "M", "L", "XL"],
     date: 1716635445448,
@@ -145,7 +145,7 @@ export const explore_products = [
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 150,
     image: [ph7],
-    category: "Business Cards",
+    category: "Custom Skin",
     subCategory: "Minimalist",
     sizes: ["S", "M", "L", "XL"],
     date: 1716624445448,
