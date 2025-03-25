@@ -22,7 +22,9 @@ a.active hr {
   transform: translate(3px, 3px);
   box-shadow: 2px 2px 1px 1px rgb(59, 179, 113);
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 @media (max-width: 640px) {
   a.active {
     background-color: black;

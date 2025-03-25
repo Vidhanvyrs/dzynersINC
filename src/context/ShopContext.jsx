@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import {
   phone_products,
   explore_products,
+  delivery,
   posters,
 } from "../assets/phoneassets/phoneassets";
 
@@ -16,6 +17,7 @@ const ShopContextProvider = ({ children }) => {
   const value = {
     phone_products,
     explore_products,
+    delivery,
     posters,
     currency,
     delivery_fee,
