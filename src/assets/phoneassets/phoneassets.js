@@ -47,6 +47,15 @@ import sticker119 from "./sticker119.jpg";
 import sticker120 from "./sticker120.jpg";
 import card3 from "./card3.jpg";
 import logo1 from "./logoedited.png";
+import marvel from "./marvel-poster.png";
+import anime from "./anime-poster.png";
+import dc from "./dc-poster.png";
+import f1 from "./F1.png";
+import nba from "./nba.png";
+import cricket from "./cricket.png";
+import soccer from "./soccer.png";
+import exploremore from "./exploremore.png";
+import custom from "./custom.png";
 
 // import cart_icon from "./cart_icon.png";
 // import bin_icon from "./bin_icon.png";
@@ -85,9 +94,56 @@ export const phassets = {
   // stripe_logo,
   // cross_icon,
 };
+export const posters = [
+  {
+    id: "anime",
+    name: "Anime Wraps & Covers",
+    image: [anime],
+  },
+  {
+    id: "marvel",
+    name: "Marvel Wraps & Covers",
+    image: [marvel],
+  },
+  {
+    id: "dc",
+    name: "DC Wraps & Covers",
+    image: [dc],
+  },
+  {
+    id: "f1",
+    name: "F1 Wraps & Covers",
+    image: [f1],
+  },
+  {
+    id: "nba",
+    name: "NBA Wraps & Covers",
+    image: [nba],
+  },
+  {
+    id: "cricket",
+    name: "Cricket Wraps & Covers",
+    image: [cricket],
+  },
+  {
+    id: "soccer",
+    name: "Soccer Wraps & Covers",
+    image: [soccer],
+  },
+  {
+    id: "explore",
+    name: "+More Wraps & Covers",
+    image: [exploremore],
+  },
+  {
+    id: "custom",
+    name: "Custom Wraps & Covers",
+    image: [custom],
+  },
+];
 export const explore_products = [
   {
-    _id: "all_wraps_covers",
+    _id: "mobile-wraps",
     name: "Wraps & Covers",
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
@@ -100,7 +156,7 @@ export const explore_products = [
     bestseller: false,
   },
   {
-    _id: "all_laptops_skins",
+    _id: "laptop-wraps",
     name: "Laptop Skins",
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
@@ -113,7 +169,7 @@ export const explore_products = [
     bestseller: false,
   },
   {
-    _id: "all_stickers",
+    _id: "stickers",
     name: "Stickers",
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",

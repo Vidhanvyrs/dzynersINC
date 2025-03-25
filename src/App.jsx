@@ -12,6 +12,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import SearchBar from "./components/Searchbar";
 import ExploreProduct from "./pages/ExploreProduct";
+import Sticker from "./pages/Sticker";
+import Mobile from "./pages/Mobile";
+import Laptop from "./pages/Laptop";
 
 const App = () => {
   return (
@@ -21,6 +24,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/collection" element={<Collection />} />
+        <Route path="/mobile-wraps" element={<Mobile />} />
+        <Route path="/laptop-wraps" element={<Laptop />} />
+        <Route path="/stickers" element={<Sticker />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/product/:productId" element={<Product />} />

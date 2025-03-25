@@ -61,21 +61,21 @@ const Navbar = () => {
                 ALL
               </Link>
               <Link
-                to="/collection"
+                to="/mobile-wraps"
                 className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
                 onClick={() => setDropdownOpen(false)}
               >
                 Mobiles
               </Link>
               <Link
-                to="/collection"
+                to="/laptop-wraps"
                 className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
                 onClick={() => setDropdownOpen(false)}
               >
                 Laptops
               </Link>
               <Link
-                to="/collection"
+                to="/stickers"
                 className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
                 onClick={() => setDropdownOpen(false)}
               >
@@ -188,7 +188,7 @@ const Navbar = () => {
                   ALL
                 </Link>
                 <Link
-                  to="/collection"
+                  to="/mobile-wraps"
                   className="block px-4 py-2 pl-6 text-gray-700 hover:bg-gray-200"
                   onClick={() => {
                     setDropdownOpen(false);
@@ -198,7 +198,7 @@ const Navbar = () => {
                   Mobiles
                 </Link>
                 <Link
-                  to="/collection"
+                  to="/laptop-wraps"
                   className="block px-4 py-2 pl-6 text-gray-700 hover:bg-gray-200"
                   onClick={() => {
                     setDropdownOpen(false);
@@ -208,7 +208,7 @@ const Navbar = () => {
                   Laptops
                 </Link>
                 <Link
-                  to="/collection"
+                  to="/stickers"
                   className="block px-4 py-2 pl-6 text-gray-700 hover:bg-gray-200"
                   onClick={() => {
                     setDropdownOpen(false);

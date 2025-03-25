@@ -15,6 +15,14 @@ a.active hr {
   font-style: normal;
 }
 
+.purpleShadow {
+  box-shadow: 10px 10px 1px 1px rgb(59, 179, 113);
+}
+.purpleShadow:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 1px 1px rgb(59, 179, 113);
+}
+
 @media (max-width: 640px) {
   a.active {
     background-color: black;
