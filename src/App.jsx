@@ -15,10 +15,13 @@ import ExploreProduct from "./pages/ExploreProduct";
 import Sticker from "./pages/Sticker";
 import Mobile from "./pages/Mobile";
 import Laptop from "./pages/Laptop";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+      <ToastContainer />
       <Navbar />
       <SearchBar />
       <Routes>
