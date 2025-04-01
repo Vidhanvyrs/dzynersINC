@@ -200,7 +200,7 @@ const Product = () => {
             </form>
           ) : (
             <button
-              onClick={() => addToCart(productData.id)} // 🛠️ Fix: Added onClick
+              onClick={() => addToCart(productId)} // Fix: Added onClick
               className="bg-black mt-5 cursor-pointer text-white px-8 py-3 text-sm active:bg-gray-700"
             >
               Add to Cart

@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import PropTypes from "prop-types";
 import {
   phone_products,
@@ -8,6 +8,7 @@ import {
   posters,
 } from "../assets/phoneassets/phoneassets";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 export const ShopContext = createContext();
 
@@ -17,6 +18,7 @@ const ShopContextProvider = ({ children }) => {
   const [search, setSearch] = useState("");
   const [showSearch, setShowSearch] = useState(false);
   const [cartItems, setCartItems] = useState({});
+  const navigate = useNavigate();
 
   //check whether the product is a phone product
   const isPhoneProduct = (itemId) => {
@@ -55,9 +57,10 @@ const ShopContextProvider = ({ children }) => {
       }
       key = `${selectedPhone}-${selectedModal}-${selectedWrap}`;
     } else {
-      // Non-phone products use a default key
-      key = "default";
+      // Non-phone products should use itemId as the key instead of "default"
+      key = itemId;
     }
+    console.log("itemId" + itemId);
 
     if (cartData[itemId]) {
       if (cartData[itemId][key]) {
@@ -76,6 +79,7 @@ const ShopContextProvider = ({ children }) => {
       };
     }
 
+    console.log(cartData); // Now, non-mobile products will have proper itemId instead of undefined
     setCartItems(cartData);
     toast.success("Successfully Added to Cart 😄");
   };
@@ -90,9 +94,57 @@ const ShopContextProvider = ({ children }) => {
     return totalCount;
   };
 
-  useEffect(() => {
-    console.log(cartItems);
-  }, [cartItems]);
+  const updateQuantity = async (
+    itemId,
+    selectedPhone = null,
+    selectedModal = null,
+    selectedWrap = null,
+    quantity
+  ) => {
+    let cartData = structuredClone(cartItems);
+
+    let key = isPhoneProduct(itemId)
+      ? `${selectedPhone}-${selectedModal}-${selectedWrap}`
+      : itemId;
+
+    if (cartData[itemId] && cartData[itemId][key]) {
+      if (quantity === 0) {
+        // Remove the specific variant from the cart
+        delete cartData[itemId][key];
+
+        // If no variants remain for the item, remove the item itself
+        if (Object.keys(cartData[itemId]).length === 0) {
+          delete cartData[itemId];
+        }
+      } else {
+        cartData[itemId][key].quantity = Math.max(1, quantity);
+      }
+      setCartItems(cartData);
+    } else {
+      toast.error("Item not found in cart! ❌");
+    }
+  };
+
+  const getCartAmount = () => {
+    let totalAmount = 0;
+    for (const items in cartItems) {
+      let itemInfo = phone_products.find((product) => product._id === items);
+      for (const item in cartItems[items]) {
+        try {
+          if (cartItems[items][item].quantity > 0) {
+            totalAmount += itemInfo.price * cartItems[items][item].quantity;
+          }
+        } catch (error) {
+          toast.error("Something went wrong! 😭", error);
+        }
+      }
+    }
+    return totalAmount;
+  };
+
+  // useEffect(() => {
+  //   console.log(cartItems);
+  // }, [cartItems]);
   const value = {
     phone_products,
     explore_products,
@@ -102,6 +154,9 @@ const ShopContextProvider = ({ children }) => {
     cartItems,
     addToCart,
     getCartCount,
+    updateQuantity,
+    getCartAmount,
+    navigate,
     currency,
     delivery_fee,
     search,
