@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import {
   phone_products,
   explore_products,
+  phassets,
   delivery,
   mobilesModals,
   posters,
@@ -148,6 +149,7 @@ const ShopContextProvider = ({ children }) => {
   const value = {
     phone_products,
     explore_products,
+    phassets,
     delivery,
     posters,
     mobilesModals,

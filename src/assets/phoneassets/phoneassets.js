@@ -59,6 +59,8 @@ import custom from "./custom.png";
 import residue from "./residue.png";
 import laser from "./precise cutting.webp";
 import hdcover from "./HD-cover.webp";
+import random from "./random.jpg";
+import google from "./google.jpeg";
 
 // import cart_icon from "./cart_icon.png";
 // import bin_icon from "./bin_icon.png";
@@ -80,6 +82,8 @@ import hdcover from "./HD-cover.webp";
 export const phassets = {
   logo1,
   banner,
+  random,
+  google,
   // cart_icon,
   // dropdown_icon,
   // exchange_icon,
